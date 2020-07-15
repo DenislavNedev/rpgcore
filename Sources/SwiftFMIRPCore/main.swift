@@ -1,5 +1,5 @@
 var mapGenerator = DefaultMapGenerator()
-var playerGenerator = DefaultPlayerGenerator(heroGenerator: DefaultHeroGenerator())
+var playerGenerator = DefaultPlayerGenerator(heroGenerator: RpgHeroGenerator())
 var figthGenerator = DefaultFightGenerator()
 var equipmentGenerator = RpgEquipmentGenerator()
 var mapRendered = DefaultMapRenderer()

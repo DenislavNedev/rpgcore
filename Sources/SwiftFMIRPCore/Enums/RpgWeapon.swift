@@ -14,6 +14,7 @@ enum RpgWeapon {
   case flail
   case spear
   case halberd
+  case noWeapon
 }
 
 extension RpgWeapon : Weapon  {
@@ -34,6 +35,7 @@ extension RpgWeapon : Weapon  {
         case .flail: return 3
         case .spear: return 5
         case .halberd: return 7
+        case .noWeapon: return 0
       }
   }
 
@@ -54,6 +56,7 @@ extension RpgWeapon : Weapon  {
         case .spear: return 8
         case .crossBow: return 8 
         case .halberd: return 4 
+        case .noWeapon: return 0
       }
   }
 }
@@ -76,6 +79,7 @@ extension RpgWeapon : CustomStringConvertible  {
       case .spear: return "Spear"
       case .crossBow: return "Cross Bow"
       case .halberd: return "Halberd"
+      case .noWeapon: return "No Weapon"
     }
   }
 }
