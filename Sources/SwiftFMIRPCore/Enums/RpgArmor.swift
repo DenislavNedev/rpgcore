@@ -63,3 +63,5 @@ extension RpgArmor : CustomStringConvertible  {
         }
       }
 }
+
+extension RpgArmor : CaseIterable {}

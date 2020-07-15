@@ -16,7 +16,7 @@ enum RpgWeapon {
   case halberd
 }
 
-extension RpgWeapon : Armor  {
+extension RpgWeapon : Weapon  {
     var defence : Int {
       switch self {
         case .battleAxe: return 4
@@ -79,3 +79,5 @@ extension RpgWeapon : CustomStringConvertible  {
     }
   }
 }
+
+extension RpgWeapon : CaseIterable {}
